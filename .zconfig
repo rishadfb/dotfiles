@@ -9,9 +9,6 @@ export CCACHE_PATH="/usr/bin"                 # Tell ccache to only use compiler
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins.txt
 
-# Sources
-source /usr/share/nvm/init-nvm.sh
-
 # Aliases
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias pacman="/bin/yay"
