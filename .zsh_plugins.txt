@@ -1,7 +1,13 @@
+# Base plugins
 zdharma/fast-syntax-highlighting
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-completions
 marzocchi/zsh-notify
-buonomo/yarn-completion
+bobsoppe/zsh-ssh-agent
+
+# App plugins
+bobsoppe/zsh-ssh-agent
+
+# Theme
 bhilburn/powerlevel9k

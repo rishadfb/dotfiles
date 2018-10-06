@@ -5,8 +5,11 @@ export EDITOR=nano
 export PATH="/usr/lib/colorgcc/bin/:$PATH"    # As per usual colorgcc installation, leave unchanged (don't add ccache)
 export CCACHE_PATH="/usr/bin"                 # Tell ccache to only use compilers here
 
+# Antibody
+source <(antibody init)
+antibody bundle < ~/.zsh_plugins.txt
+
 # Sources
-source ~/.zsh_plugins.sh
 source /usr/share/nvm/init-nvm.sh
 
 # Aliases
