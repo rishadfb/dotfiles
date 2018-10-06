@@ -7,7 +7,7 @@ marzocchi/zsh-notify
 bobsoppe/zsh-ssh-agent
 
 # App plugins
-bobsoppe/zsh-ssh-agent
+buonomo/yarn-completion
 
 # Theme
 bhilburn/powerlevel9k
