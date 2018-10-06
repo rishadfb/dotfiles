@@ -23,8 +23,6 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate # en
 # Keybindings
 bindkey '^[[3~' delete-char
 bindkey '^[3;5~' delete-char
-# bindkey '^[[A' history-substring-search-up
-# bindkey '^[[B' history-substring-search-down
 
 # Autocompletion
 autoload -Uz compinit

@@ -4,7 +4,6 @@ zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-completions
 marzocchi/zsh-notify
-bobsoppe/zsh-ssh-agent
 
 # App plugins
 buonomo/yarn-completion
