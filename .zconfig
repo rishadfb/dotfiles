@@ -1,0 +1,16 @@
+# Environment variables
+export LANG="en_US.UTF-8"
+export VISUAL=nano
+export EDITOR=nano
+export PATH="/usr/lib/colorgcc/bin/:$PATH"    # As per usual colorgcc installation, leave unchanged (don't add ccache)
+export CCACHE_PATH="/usr/bin"                 # Tell ccache to only use compilers here
+
+# Sources
+source ~/.zsh_plugins.sh
+source /usr/share/nvm/init-nvm.sh
+
+# Aliases
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias pacman="/bin/yay"
+alias i3-config="code ~/.config/i3/config"
+alias ls="ls --color=auto"
