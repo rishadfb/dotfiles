@@ -38,7 +38,7 @@ font-3 = MaterialIcons:style=regular:pixelsize=11;4
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = keyboard memory cpu filesystem pulseaudio-simple battery-combined-udev date openweathermap-simple
+modules-right = keyboard memory cpu filesystem pulseaudio-simple battery-combined-udev popup-calendar openweathermap-simple
 
 tray-position = right
 tray-padding = 6
@@ -129,17 +129,11 @@ format-mounted-prefix-foreground = ${xrdb:color6}
 format-mounted-underline = ${xrdb:color6}
 label-mounted = %percentage_used%%
 
-[module/date]
-type = internal/date
-interval = 1
-date = "%a %b %d "
-date-alt = " %d %b -"
-time = %H:%M
-time-alt = %H:%M:%S
-format-prefix = 
-format-prefix-foreground = ${xrdb:color4}
-format-underline = ${xrdb:color4}
-label = %date% %time%
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/modules/calendar/popup-calendar
+interval = 5
+click-left = ~/.config/polybar/modules/calendar/popup-calendar --popup
 
 [module/pulseaudio-simple]
 type = custom/script
