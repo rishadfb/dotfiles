@@ -12,7 +12,6 @@ alert = ${xrdb:color13}
 bottom = true
 width = 100%
 height = 31
-;offset-x = 1%
 offset-y = -1
 radius = 0
 fixed-center = false
@@ -39,7 +38,7 @@ font-3 = MaterialIcons:style=regular:pixelsize=11;4
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = keyboard memory cpu filesystem battery-combined-udev date openweathermap-simple
+modules-right = keyboard memory cpu filesystem pulseaudio-simple battery-combined-udev date openweathermap-simple
 
 tray-position = right
 tray-padding = 6
@@ -207,12 +206,13 @@ animation-charging-4 = " "
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-[module/openweathermap-simple]
+[module/pulseaudio-simple]
 type = custom/script
-exec = ~/.config/polybar/modules/openweathermap/openweathermap-simple
-exec-if = ping openweathermap.org -c 1
-interval = 600
-label-font = 3
+exec = ~/.config/polybar/modules/pulseaudio/pulseaudio-simple
+interval = 3
+format-prefix = "vol "
+format-prefix-foreground = ${xrdb:color9}
+format-prefix-underline = ${xrdb:color9}
 
 [module/battery-combined-udev]
 type = custom/script
@@ -222,12 +222,15 @@ format-prefix = "bat "
 format-prefix-foreground = ${xrdb:color5}
 format-prefix-underline = ${xrdb:color5}
 
+[module/openweathermap-simple]
+type = custom/script
+exec = ~/.config/polybar/modules/openweathermap/openweathermap-simple
+exec-if = ping openweathermap.org -c 1
+interval = 600
+label-font = 3
+
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
 
 [global/wm]
 margin-top = 5
