@@ -39,7 +39,7 @@ font-3 = MaterialIcons:style=regular:pixelsize=11;4
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = keyboard memory cpu filesystem avg-battery date weather
+modules-right = keyboard memory cpu filesystem avg-battery date openweathermap-simple
 
 tray-position = right
 tray-padding = 6
@@ -207,9 +207,9 @@ animation-charging-4 = " "
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-[module/weather]
+[module/openweathermap-simple]
 type = custom/script
-exec = ~/.config/polybar/modules/forecast/polybar-forecast
+exec = ~/.config/polybar/modules/openweathermap/openweathermap-simple
 exec-if = ping openweathermap.org -c 1
 interval = 600
 label-font = 3
