@@ -10,4 +10,13 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>folder-saved-search</icon>
+	<name>Search</name>
+	<unique-id>1538869738464410-1</unique-id>
+	<command>catfish –path=%f</command>
+	<description>Search for files and folders</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
 </actions>
