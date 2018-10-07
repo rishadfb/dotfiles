@@ -1,0 +1,16 @@
+[user]
+	email = rb2102@gmail.com
+	name = Rishad Bharucha
+
+[core]
+	editor = nano
+
+[color]
+	ui = true
+
+[alias]
+        amend = !git add -A && git commit --amend --no-edit
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
