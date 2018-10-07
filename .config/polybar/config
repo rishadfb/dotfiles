@@ -39,7 +39,7 @@ font-3 = MaterialIcons:style=regular:pixelsize=11;4
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = keyboard memory cpu filesystem avg-battery date openweathermap-simple
+modules-right = keyboard memory cpu filesystem battery-combined-udev date openweathermap-simple
 
 tray-position = right
 tray-padding = 6
@@ -214,14 +214,13 @@ exec-if = ping openweathermap.org -c 1
 interval = 600
 label-font = 3
 
-[module/avg-battery]
+[module/battery-combined-udev]
 type = custom/script
-exec = ~/.config/polybar/modules/avg-battery/battery
-interval = 5
+exec = ~/.config/polybar/modules/battery/battery-combined-udev
+tail = true
 format-prefix = "bat "
 format-prefix-foreground = ${xrdb:color5}
 format-prefix-underline = ${xrdb:color5}
-
 
 [settings]
 screenchange-reload = true
