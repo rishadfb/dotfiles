@@ -321,13 +321,12 @@ set_from_resource $term_color15    color15
 bindsym $mod+m bar mode toggle
 
 # Theme colors
-# class                 border      backgr.     text        indic.      child_border
-client.focused          $term_color8  $term_color8  $term_color11 $term_color6
-client.focused_inactive $term_color8  $term_color8  $term_color11 $term_color6
-client.unfocused        $term_color8  $term_color8  $term_color8  $term_color10
-client.urgent           $term_color13 $term_color12 $term_color4  $term_color14
-client.placeholder      $term_color15 $i3_color17 $i3_color16 $term_color15 $i3_color17
-
+# class                 border          backgr.         text            indic.          child_border
+client.focused          $term_color8    $term_color0    $term_color11   $term_color6
+client.focused_inactive $term_color8    $term_color8    $term_color3    $term_color6
+client.unfocused        $term_color8    $term_color8    $term_color3    $term_color10
+client.urgent_workspace $term_color13   $term_color12   $term_color4    $term_color14
+client.placeholder      $term_color15   $i3_color17     $i3_color16     $term_color15   $i3_color17
 client.background       $term_background
 
 #############################
