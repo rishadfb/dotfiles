@@ -1,3 +1,7 @@
+# Source configurations
+source ~/.zconfig
+source ~/.powerlevel9k
+
 # History
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -42,6 +46,3 @@ zmodload -i zsh/complist
 # Show OS info when opening a new terminal
 neofetch
 
-# Source configurations
-source ~/.powerlevel9k
-source ~/.zconfig

@@ -5,8 +5,5 @@ zsh-users/zsh-history-substring-search
 zsh-users/zsh-completions
 marzocchi/zsh-notify
 
-# App plugins
-buonomo/yarn-completion
-
 # Theme
 bhilburn/powerlevel9k
