@@ -25,6 +25,8 @@ bindkey '^[[3~' delete-char
 bindkey '^[3;5~' delete-char
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey "\e[H" beginning-of-line
+bindkey "\e[F" end-of-line
 
 # Autocompletion
 autoload -Uz compinit
