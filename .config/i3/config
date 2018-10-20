@@ -185,6 +185,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Gnome-boxes"] floating enable border normal
 for_window [class="Yad"] floating enable
+for_window [title="Battery Warning"] sticky enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -246,6 +247,7 @@ bindsym $mod+9 exec --no-startup-id i3lock-fancy
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
+exec --no-startup-id i3-battery-popup -n
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
