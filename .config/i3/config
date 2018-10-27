@@ -295,14 +295,22 @@ set_from_resource $term_color15    color15
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
-# Theme colors
-# class                 border          backgr.         text            indic.          child_border
-client.focused          $term_color8    $term_color0    $term_color11   $term_color6
-client.focused_inactive $term_color8    $term_color8    $term_color3    $term_color6
-client.unfocused        $term_color8    $term_color8    $term_color3    $term_color10
-client.urgent_workspace $term_color13   $term_color12   $term_color4    $term_color14
-client.placeholder      $term_color15   $i3_color17     $i3_color16     $term_color15   $i3_color17
-client.background       $term_background
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use 
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
 
 #############################
 ### settings for i3-gaps: ###
