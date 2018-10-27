@@ -1,5 +1,5 @@
 [colors]
-background = black
+background = ${xrdb:background}
 background-alt = ${xrdb:color8}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:foreground}
@@ -43,7 +43,7 @@ modules-right = keyboard memory cpu filesystem pulseaudio-simple battery-combine
 tray-position = right
 tray-padding = 6
 tray-transparent = false
-tray-background = #000000
+tray-background = ${xrdb:background}
 
 wm-restack = i3
 
