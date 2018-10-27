@@ -1,4 +1,5 @@
 # Source configurations
+source ~/.pywalrc
 source ~/.zconfig
 source ~/.powerlevel9k
 
