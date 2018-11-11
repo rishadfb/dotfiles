@@ -43,7 +43,3 @@ else
   compinit -C -i
 fi
 zmodload -i zsh/complist
-
-# Show OS info when opening a new terminal
-neofetch
-
