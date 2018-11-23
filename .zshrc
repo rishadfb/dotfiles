@@ -43,3 +43,6 @@ else
   compinit -C -i
 fi
 zmodload -i zsh/complist
+
+# Display system information
+neofetch
