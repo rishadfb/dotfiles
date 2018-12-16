@@ -5,6 +5,7 @@ export EDITOR=nano
 export PATH="/usr/lib/colorgcc/bin/:$PATH"    # As per usual colorgcc installation, leave unchanged (don't add ccache)
 export CCACHE_PATH="/usr/bin"                 # Tell ccache to only use compilers here
 export ELECTRON_TRASH=gio
+export PATH=~/.npm-global/bin:$PATH
 
 # Antibody
 source <(antibody init)
